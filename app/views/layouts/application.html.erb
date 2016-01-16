@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JwtRailsServer</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <title>JWT Rails Server</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
-<%= yield %>
-
+  <style media="screen">
+    p {
+      text-align: center;
+      color: #999;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: 'Open Sans', sans-serif;
+      font-style: italic;
+    }
+    span {
+      color: #222;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 14px;
+    }
+  </style>
+  <p>
+    Silence is a true friend who never betrays. — <span>Confucius</span>
+  </p>
 </body>
 </html>
