@@ -21,6 +21,7 @@ end
 group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
+  gem 'figaro', '~> 1.1.1'
 end
 
 group :development do
