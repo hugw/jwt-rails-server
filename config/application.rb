@@ -34,5 +34,9 @@ module JwtRailsServer
     config.generators.assets = false
     config.generators.helper = false
     config.assets.enabled = false
+
+    config.to_prepare do
+      DeviseController.respond_to :json
+    end
   end
 end
