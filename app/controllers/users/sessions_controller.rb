@@ -6,6 +6,6 @@ class Users::SessionsController < Devise::SessionsController
     # Don't need devise auth sessions
     sign_out()
 
-    render json: resource.jwt, status: :created
+    render json: resource.token, status: :created
   end
 end
