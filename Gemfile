@@ -27,3 +27,8 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
+
+gem 'rabl', '~> 0.11.8'
+gem 'oj', '~> 2.14.3'
+gem 'responders', '~> 2.1.0'
+gem 'jwt', '~> 1.5.2'
