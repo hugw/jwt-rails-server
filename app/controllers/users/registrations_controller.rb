@@ -10,7 +10,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     if resource.persisted?
       if resource.active_for_authentication?
         sign_up(resource_name, resource)
-        respond_with resource, location: nil
+        render json: resource.token, status: :created
       end
     else
       clean_up_passwords resource
