@@ -25,6 +25,8 @@ group :development, :test do
   gem 'faker', '~> 1.6.1'
   gem 'database_cleaner', '~> 1.5.1'
   gem 'mailcatcher', '~> 0.6.2'
+  gem 'rspec-rails', '~> 3.4.0'
+  gem 'factory_girl_rails', '~> 4.5.0'
 end
 
 group :development do
