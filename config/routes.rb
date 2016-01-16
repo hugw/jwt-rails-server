@@ -13,5 +13,14 @@ Rails.application.routes.draw do
     post 'users'           => 'users/registrations#create', defaults: json
   end
 
+  # API routes
+  namespace :api, defaults: json do
+    namespace :v1 do
+      # User profile
+      put '/user' => 'users#update'
+      get '/user' => 'users#show'
+    end
+  end
+
   root 'application#root'
 end

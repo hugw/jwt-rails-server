@@ -45,4 +45,12 @@ class ApplicationController < ActionController::Base
   def json_request?
      head :bad_request unless request.format == 'application/json'
   end
+
+  def user_with_creds
+    @current_user unless @current_user.nil?
+  end
+
+  def update_token?
+    @token unless @token.nil?
+  end
 end
