@@ -17,7 +17,20 @@ Bundler.require(*Rails.groups)
 
 module JwtRailsServer
   class Application < Rails::Application
+    # CORS Setup
+    config.middleware.insert_before 0, "Rack::Cors", :debug => true, :logger => (-> { Rails.logger }) do
+      allow do
+        origins '*'
+
+        resource '*',
+          :headers => :any,
+          :methods => [:get, :post, :delete, :put, :options, :head],
+          :max_age => 0
+      end
+    end
+
     config.active_record.raise_in_transactional_callbacks = true
+
     config.generators.assets = false
     config.generators.helper = false
     config.assets.enabled = false
