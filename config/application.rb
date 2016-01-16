@@ -35,8 +35,6 @@ module JwtRailsServer
     config.generators.helper = false
     config.assets.enabled = false
 
-    config.to_prepare do
-      DeviseController.respond_to :json
-    end
+    config.autoload_paths << Rails.root.join('lib')
   end
 end
