@@ -2,7 +2,7 @@ require 'jwt'
 
 module AuthToken
   def self.encode(payload)
-    payload['exp'] = 5.days.from_now.to_i
+    payload['exp'] = 10.days.from_now.to_i
     JWT.encode(payload, ENV['devise_key'])
   end
 
