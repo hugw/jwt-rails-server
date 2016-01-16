@@ -22,6 +22,8 @@ group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
   gem 'figaro', '~> 1.1.1'
+  gem 'faker', '~> 1.6.1'
+  gem 'database_cleaner', '~> 1.5.1'
 end
 
 group :development do
