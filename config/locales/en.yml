@@ -15,3 +15,10 @@ en:
               blank: 'BLANK'
               confirmation: 'CONFIRMATION'
               too_short: 'TOO_SHORT'
+            password_confirmation:
+              confirmation: 'CONFIRMATION'
+            reset_password_token:
+              invalid: 'INVALID'
+              blank: 'BLANK'
+            status:
+              inclusion: 'INCLUSION'
