@@ -7,6 +7,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  cattr_accessor :callback_url
+
   validates :name, presence: true, length: { minimum: 5 }
   validates :status, inclusion: { in: STATUS.values }
 
