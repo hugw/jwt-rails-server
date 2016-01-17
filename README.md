@@ -1,6 +1,6 @@
 ## JWT Rails API Server
 
-A simple API Server that manages users subscriptions and JWT authentication. It offers seamless integration with Firebase custom authentication and is **production ready** for heroku server.
+An API Server that manages users subscriptions and JWT authentication. It offers seamless integration with Firebase custom authentication and is **production ready** for heroku servers.
 
 **Stack:** `Firebase` + `Devise` + `JWT` + `CORS`
 
